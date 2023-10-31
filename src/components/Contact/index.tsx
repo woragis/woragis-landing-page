@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
+import { StyledContact, SocialMedia } from "./style";
 const Contact = () => {
   const contacts = [
     {
@@ -31,10 +32,10 @@ const Contact = () => {
     );
   });
   return (
-    <div>
+    <StyledContact>
       <h3>Contact</h3>
-      <ul>{socialMediaIcons}</ul>
-    </div>
+      <SocialMedia>{socialMediaIcons}</SocialMedia>
+    </StyledContact>
   );
 };
 
