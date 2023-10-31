@@ -30,7 +30,7 @@ function App() {
         </p>
       </section>
       <footer>
-        <small>&copy;2023 - Jezreel de Andrade</small>
+        <small>Jezreel de Andrade - 2023&copy;</small>
       </footer>
     </>
   );
