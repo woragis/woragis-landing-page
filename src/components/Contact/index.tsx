@@ -1,9 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 import { StyledContact, SocialMedia } from "./style";
 const Contact = () => {
-  const contacts = [
+  const contactsArrObj = [
     {
       name: "Github",
       icon: <FaGithub />,
@@ -19,22 +17,26 @@ const Contact = () => {
       icon: <FaInstagram />,
       link: "https://www.instagram.com",
     },
-    { name: "Twitter", icon: <FaTwitter />, link: "https://www.twitter.com" },
+    {
+      name: "Twitter",
+      icon: <FaTwitter />,
+      link: "https://www.twitter.com",
+    },
   ];
-  const socialMediaIcons = contacts.map(({ name, icon, link }) => {
+  const test = contactsArrObj.map((contact) => {
     return (
       <li>
-        <Link to={link}>
-          {icon}
-          {name}
-        </Link>
+        <a href={contact.link}>
+          {contact.icon}
+          {contact.name}
+        </a>
       </li>
     );
   });
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <h3>Contact</h3>
-      <SocialMedia>{socialMediaIcons}</SocialMedia>
+      <SocialMedia>{test}</SocialMedia>
     </StyledContact>
   );
 };

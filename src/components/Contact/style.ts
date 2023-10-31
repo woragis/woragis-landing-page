@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const StyledContact = styled.div`
+export const StyledContact = styled.section`
+  height: 300px;
+  width: inherit;
   h3 {
     color: cyan;
   }
