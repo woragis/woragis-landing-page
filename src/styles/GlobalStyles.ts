@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     color: black;
     transition: 300ms;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scroll-behavior: smooth;
 }
 section {
 
