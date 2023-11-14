@@ -1,6 +1,8 @@
+import React from "react";
 import { StyledSideNav } from "./style";
+import { SideNavType } from "../../types/componentsType";
 
-const SideNav = () => {
+const SideNav: React.FC<SideNavType> = () => {
   const links = [
     { linkId: "top", title: "Top" },
     { linkId: "projects", title: "Projects" },

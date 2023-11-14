@@ -4,7 +4,7 @@ import Contact from "../../components/Contact";
 import Projects from "../../components/Projects";
 import { StyledLandingPage } from "./style";
 
-const LandingPage = () => {
+const LandingPage: React.FC = () => {
   return (
     <StyledLandingPage>
       <div id="top"></div>

@@ -1,6 +1,8 @@
 import React from "react";
 import { StyledHeader } from "./style";
-const Header = () => {
+import { HeaderType } from "../../types/componentsType";
+
+const Header: React.FC<HeaderType> = () => {
   return (
     <>
       <StyledHeader id="header">

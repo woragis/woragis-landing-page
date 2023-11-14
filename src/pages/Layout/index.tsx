@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import GlobalStyle from "../../styles/GlobalStyles";
 import SideNav from "../../components/SideNav";
 
-const Layout = () => {
+const Layout: React.FC = () => {
   return (
     <>
       <GlobalStyle />

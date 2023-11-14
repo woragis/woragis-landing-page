@@ -1,7 +1,8 @@
 import React from "react";
 import { StyledAbout } from "./style";
+import { AboutType } from "../../types/componentsType";
 
-const About = () => {
+const About: React.FC<AboutType> = () => {
   return (
     <StyledAbout id="about-me">
       <h3>

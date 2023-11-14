@@ -1,6 +1,9 @@
+import React from "react";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 import { StyledContact, SocialMedia } from "./style";
-const Contact = () => {
+import { ContactType } from "../../types/componentsType";
+
+const Contact: React.FC<ContactType> = () => {
   const contactsArrObj = [
     {
       name: "Github",
