@@ -5,6 +5,12 @@ import { AboutType } from "../../types/componentsType";
 const About: React.FC<AboutType> = () => {
   return (
     <StyledAbout id="about-me">
+      <a href="https://roadmap.sh">
+        <img
+          src="https://api.roadmap.sh/v1-badge/wide/647cc86c40cee644b2845e40?variant=dark"
+          alt="roadmap.sh"
+        />
+      </a>
       <h3>
         About <span>Jezreel de Andrade</span>
       </h3>
